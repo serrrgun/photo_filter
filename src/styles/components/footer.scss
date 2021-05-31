@@ -1,0 +1,70 @@
+.footer {
+  border-top: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #38495a, #a2abb3, #38495a);
+
+  &__container {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  &__link-github {
+    display: block;
+    width: 120px;
+    height: 45px;
+    padding-left: 45px;
+    background-image: url(../assets/images/github.svg);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    line-height: 45px;
+    color: #636161;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    transition: 0.3s;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &__link-rss {
+    display: block;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    width: 86px;
+    height: 32px;
+    background-image: url(../assets/images/rss.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-right: 33px;
+
+    span {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 21px;
+      letter-spacing: -2px;
+      color: #636161;
+      line-height: 0.7;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    &:hover span {
+      right: -5px;
+      letter-spacing: 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+      
+  }
+}

@@ -1,0 +1,50 @@
+@import '~normalize.css';
+
+// FONTS
+@import './fonts.scss';
+
+// VARIABLES
+$main-color: #e4e2e2;
+
+// INITIAL
+
+body {
+  color: $main-color;
+  font-size: 24px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: #444444;
+  overflow: hidden;
+  
+  @media (max-width: 1200px) {
+    //padding: 10px;
+  }
+}
+
+:root {
+  --blur: 0px;
+  --invert: 0%;
+  --sepia: 0%;
+  --saturate: 100%;
+  --hue: 0deg;
+}
+
+// FILES
+
+@import 'components/header';
+@import 'components/main';
+@import 'components/filters';
+@import 'components/editor';
+@import 'components/button';
+@import 'components/footer';
+
+
+
+
+
+

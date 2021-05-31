@@ -1,0 +1,58 @@
+.button {
+  flex: 1;
+  min-width: 120px;
+  height: 40px;
+  padding: 0 10px;
+  background-color: #454c53;
+  border: 0;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &__input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &--load {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &--active {
+    background-color: #00b4a4;
+
+    &:hover {
+      background-color: #00c9b7;
+    }
+
+    &:active {
+      background-color: #0c7a71;
+    }
+  }
+
+  &:not(.button--active):hover {
+    background-color: #515961;
+  }
+
+  &:not(.button--active):active {
+    background-color: #00c9b7;
+  }
+
+  @media (max-width: 1200px) {
+    min-width: 45%;
+    border-radius: 2px;
+  }
+}

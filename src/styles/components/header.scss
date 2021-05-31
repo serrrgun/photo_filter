@@ -1,0 +1,15 @@
+.header {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #38495a, #a2abb3, #38495a);
+
+  &__title {
+    margin: 0;
+    line-height: 60px;
+    font-weight: 300;
+    font-size: 2em;
+    color: #b9b9b9;
+  }
+}
